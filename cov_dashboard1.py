@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/owid-covid-data.csv')
 
 # Get the countries list
-clist = df['Country/Region'].unique()
+clist = df['location'].unique()
 
 # Create the streamlit sidebar
 country = st.sidebar.selectbox("Select a country:",clist)
